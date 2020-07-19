@@ -12,7 +12,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: v2ku
-          image: free9080/v2
+          image: jackadam/bluemix
           ports:
             - containerPort: 8251
             
