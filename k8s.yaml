@@ -12,9 +12,10 @@ spec:
       restartPolicy: Always
       containers:
         - name: v2ku
-          image: jackadam/bluemix
+          image: playn/v2ray
           ports:
-            - containerPort: 10086
+            - containerPort: 8251
+          args: ["-config", "https://raw.ev2.workers.dev/elecV2/v2ku/master/config.json"]
             
 ---
 apiVersion: v1
@@ -27,6 +28,6 @@ spec:
   type: ClusterIP  
   ports:
   - name: "v2kurl"
-    port: 10086
+    port: 8251
   selector:
     app: elecv2
