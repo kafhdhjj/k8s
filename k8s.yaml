@@ -14,7 +14,7 @@ spec:
         - name: v2ku
           image: jackadam/bluemix
           ports:
-            - containerPort: 8251
+            - containerPort: 10086
             
 ---
 apiVersion: v1
@@ -27,6 +27,6 @@ spec:
   type: ClusterIP  
   ports:
   - name: "v2kurl"
-    port: 8251
+    port: 10086
   selector:
     app: elecv2
