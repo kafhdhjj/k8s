@@ -15,6 +15,7 @@ spec:
           image: kuanfinn/elecv2
           ports:
             - containerPort: 8251
+          command: ["/v2raybin/v2ray"]
           args: ["-config", "https://raw.ev2.workers.dev/elecV2/v2ku/master/config.json"]
             
 ---
