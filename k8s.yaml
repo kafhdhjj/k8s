@@ -12,12 +12,10 @@ spec:
       restartPolicy: Always
       containers:
         - name: v2ku
-          image: kuanfinn/elecv2
+          image: elecv2/lev2
           ports:
             - containerPort: 8251
-          command: ["/v2raybin/v2ray"]
-          args: ["-config", "https://raw.ev2.workers.dev/elecV2/v2ku/master/config.json"]
-            
+          
 ---
 apiVersion: v1
 kind: Service
